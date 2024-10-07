@@ -1,0 +1,49 @@
+<style type="text/css">
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+}
+
+.light{
+  flex: 0 0 33%;
+  max-width: 33%;
+  cursor: pointer;
+  .red{ display: none;}
+  .yellow{ display: block;}
+  &:hover{
+    .red{ display: block;}
+    .yellow{ display: none;}
+  }
+  img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+}
+</style>
+
+{% assign images = include.images | split: ',' %}
+<div class="container">
+    <div class="light">
+        {% for image in images %}
+        {% assign value = forloop.index | modulo:2 %}
+        <img {% if images.size == 2 and value == 1 %} class="yellow" 
+             {% elsif images.size == 2 and value == 0 %} class="red" {% endif %}
+            src="{{ image | prepend: 'assets/img/' | relative_url }}"
+            alt="{{ image | prepend: '/' | split: '/' | last }}">
+        {% endfor %}
+    </div>
+    <div class="text">
+        {% if include.head %}
+        <h2>{{ include.head }}</h2>
+        {% endif %}
+        {% if include.text %}
+        <p>{{ include.text }}</p>
+        {% endif %}
+    </div>
+</div>

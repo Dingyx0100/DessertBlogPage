@@ -5,3 +5,11 @@
 - authors: Michael's Rose
   title: "[Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting)"
   key: highlight
+
+- authors: Federica
+  title: "[Roman Food: the Maritozzo](https://www.livevirtualguide.com/post/roman-food-the-maritozzo/)"
+  key: Maritozzi
+
+- authors: 马壮实Maxkitchen
+  title: "[真网红流心巴斯克蛋糕，满满细节，大写好吃！](https://www.youtube.com/watch?v=7lgzm65Q1tc#:~:text=%E8%BF%99%E4%B8%AA%E6%B5%81%E5%BF%83%E5%B7%B4%E6%96%AF%E5%85%8B%E8%9B%8B)"
+  key: Basque_cake

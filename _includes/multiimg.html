@@ -1,0 +1,25 @@
+{% assign images = include.images | split: ',' %}
+
+{% if include.column == "auto" %}
+{% assign column = 100.0 | divided_by: images.size %}
+{% elsif include.column > 0 %}
+{% assign column = 100.0 | divided_by: include.column %}
+{% endif %}
+
+<div class="row" style="display: inline-block; text-align: center">
+    <figure style="width: 60%; margin: 0 auto; text-align: center">
+        <ul>
+            {% for image in images %}
+            <li {% if column %} style="list-style: none; float: left; width: {{ column }}%" {% else %} class="column" {% endif %}>
+                <img src="{{ image | prepend: 'assets/img/' | relative_url }}"
+                     alt="{{ image | prepend: '/' | split: '/' | last }}">
+            </li>
+            {% endfor %}
+        </ul>
+        {% if include.caption %}
+        <figcaption class="caption-style" style="text-align: center;">{{ include.caption }}</figcaption>
+        {% endif %}
+    </figure>
+</div>
+
+{% assign column = false %}
