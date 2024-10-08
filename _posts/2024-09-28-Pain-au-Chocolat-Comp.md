@@ -2,6 +2,7 @@
 layout: post
 title: Pastry Comparison -- Pain au Chocolat
 feature-img: "assets/img/feature-img/Pain_au_chocolat.jpg"
+thumbnail: "assets/img/thumbnails/feature-img/Pain_au_chocolat.jpg"
 tags: [Pastry Comparison]
 categories: Demo
 excerpt_separator: <!--more-->

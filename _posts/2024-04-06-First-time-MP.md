@@ -21,7 +21,7 @@ So the journey begins. I started off visiting some pastry shop around the campus
 
 For Harmony bakery, I ordered a walnut brownie and an almond jam. The brownie is sweet but tastes really good. I've always love the mouthfeel of the blend of nuts with cakes/bread -- soft with a bit of crispiness. The almond jam looks very adorable but taste rather plain. Probably I'm also not used to the taste of almond powder. 
 
-{% include aligner.html images="dessert\MP_strawberry pistachio galette.jpg" caption="The strawberry pistachio galette"%}
+{% include aligner.html images="dessert/MP_strawberry pistachio galette.jpg" caption="The strawberry pistachio galette"%}
 
 For Maillard Patisserie, I started with a strawberry pistachio galette. I was told their pistachio croissant is good, but they didn't have that on the day I went there. This galette, however, caught my eye the minute I walked in. It just looked so irresistible. I love the pistachio sauce on it specifically, blending well with the flavor of strawberry. The whole pastry is just the right sweetness.
 
